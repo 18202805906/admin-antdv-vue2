@@ -1,0 +1,130 @@
+@import './_flex.less';
+/* fade-transform */
+.fade-transform-leave-active,
+.fade-transform-enter-active {
+  transition: all 0.3s;
+}
+
+.fade-transform-enter {
+  opacity: 0;
+  transform: translateX(-10px);
+}
+
+.fade-transform-leave-to {
+  opacity: 0;
+  transform: translateX(10px);
+}
+
+.page-wrap {
+  min-height: calc(100vh - 214px);
+}
+.page-control {
+  margin-bottom: 4px;
+  .space {
+    margin: 0 4px;
+  }
+}
+// 原子样式
+
+// 布局
+.block-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+.vertical-mid {
+  vertical-align: middle;
+}
+.vertical-top {
+  vertical-align: top;
+}
+.vertical-bottom {
+  vertical-align: bottom;
+}
+.vertical-baseline {
+  vertical-align: baseline;
+}
+.width-full {
+  width: 100%;
+}
+.fr {
+  float: right;
+}
+.fl {
+  float: left;
+}
+.fn {
+  float: none;
+}
+.block {
+  display: block;
+}
+.flex {
+  display: flex;
+}
+// 文字对齐
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.text-nowrap {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+// 字体大小
+.text-mini {
+  font-size: 12px;
+}
+.text-normal {
+  font-size: 14px;
+}
+.text-medium {
+  font-size: 16px;
+}
+.text-large {
+  font-size: 18px;
+}
+// 字体颜色
+.text-primary {
+  color: @primary-color;
+}
+.text-normal {
+  color: @text-color;
+}
+.text-secondary {
+  color: @text-color-secondary;
+}
+.text-success {
+  color: @success-color;
+}
+.text-disabled {
+  color: @disabled-color;
+}
+.text-error {
+  color: @error-color;
+}
+.text-warning {
+  color: @warning-color;
+}
+// 鼠标
+.cursor-p {
+  cursor: pointer;
+}
+.cursor-d {
+  cursor: default;
+}
+// 宽度
+.w100 {
+  width: 100px;
+}
+.w150 {
+  width: 150px;
+}
+.w200 {
+  width: 200px;
+}
